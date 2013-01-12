@@ -1,8 +1,8 @@
 from django.http.response import HttpResponse
 from django.core.urlresolvers import reverse
 
-from beautifulpredicaties.predicaties import RequestParamPredicate
-from beautifulpredicaties.views import PredicateProcessView
+from beautifulpredicates.predicates import RequestParamPredicate
+from beautifulpredicates.views import PredicateProcessView
 
 
 class PonyView(PredicateProcessView):

@@ -2,7 +2,7 @@ import os
 import sys
 import django
 
-APP_MODULE = 'beautifulpredicaties'
+APP_MODULE = 'beautifulpredicates'
 
 def main():
     """
@@ -32,7 +32,7 @@ def main():
         'django.contrib.auth.middleware.AuthenticationMiddleware',
     )
 
-    global_settings.SECRET_KEY = "django_beautifulpredicaties_tests_secret_key"
+    global_settings.SECRET_KEY = "django_beautifulpredicates_tests_secret_key"
 
     from django.test.utils import get_runner
     test_runner = get_runner(global_settings)

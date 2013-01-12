@@ -1,6 +1,6 @@
 from django.test import TestCase, RequestFactory
 
-from beautifulpredicaties.predicaties import RequestParamPredicate
+from beautifulpredicates.predicates import RequestParamPredicate
 
 class RequestParamPredicateTest(TestCase):
     rf = RequestFactory()
