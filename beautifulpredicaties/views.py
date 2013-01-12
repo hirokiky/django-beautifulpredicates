@@ -4,13 +4,13 @@ from django.views.generic import View
 class PredicateProcessView(View):
     dispatch_config = {}
     def get(self, request, *args, **kwargs):
-        self.dispatch_config
+        handler = getattr(self, 'get_default', self.http_method_not_allowed)
 
-        for custom_receiver, predicate in self.dispatch_config.items():
-            if predicate(request, *args, **kwargs):
+        for custom_receiver, predicaties in self.dispatch_config.items():
+            for predicate in predicaties:
+                if not predicate(request, *args, **kwargs):
+                    break
+            else:
                 handler = getattr(self, custom_receiver)
-                break
-        else:
-            handler = getattr(self, 'get_default', self.http_method_not_allowed)
 
         return handler(request, *args, **kwargs)

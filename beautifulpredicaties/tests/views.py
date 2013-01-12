@@ -8,7 +8,7 @@ def simple_predicate(request, dispatch_flag):
 
 
 class SimplePredicateProcessView(PredicateProcessView):
-    dispatch_config = {'get_simple': simple_predicate}
+    dispatch_config = {'get_simple': (simple_predicate,)}
 
     def get_simple(self, request, *args, **kwargs):
         return HttpResponse('This is a get simple')
