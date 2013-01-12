@@ -32,6 +32,8 @@ def main():
         'django.contrib.auth.middleware.AuthenticationMiddleware',
     )
 
+    global_settings.SECRET_KEY = "django_beautifulpredicaties_tests_secret_key"
+
     from django.test.utils import get_runner
     test_runner = get_runner(global_settings)
 
