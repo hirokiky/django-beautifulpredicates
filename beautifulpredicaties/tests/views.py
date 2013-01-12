@@ -1,7 +1,7 @@
 from django.test import TestCase, RequestFactory
 from django.http import HttpResponse
 
-from .views import PredicateProcessView
+from beautifulpredicaties.views import PredicateProcessView
 
 def simple_predicate(request, dispatch_flag):
     return dispatch_flag
