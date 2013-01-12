@@ -1,6 +1,4 @@
 from django.views.generic import View
-from django.http.response import HttpResponse
-from django.core.urlresolvers import reverse
 
 
 class PredicateProcessView(View):
