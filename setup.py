@@ -7,8 +7,6 @@ setup (
     version='0.0.1',
     description="Library to provide a predicate dispatch for Django's generic views.",
     long_description="""\
-Library to provide a predicate dispatch for Django's generic views.
-
 Requirements
 -------------
 * Python 2.7 or later (not support 3.x)
