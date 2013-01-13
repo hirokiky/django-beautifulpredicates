@@ -8,7 +8,7 @@ setup (
     description="Library to provide a predicate dispatch for Django's generic views",
     author='Hiroki KIYOHARA',
     author_email='hirokiky@gmail.com',
-    url='https://github.com/hirokiky/django-beautifulpredicates/'
+    url='https://github.com/hirokiky/django-beautifulpredicates/',
     license='MIT License',
     classifiers=[
       'Development Status :: 1 - Planning',
