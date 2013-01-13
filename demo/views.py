@@ -1,5 +1,4 @@
 from django.http.response import HttpResponse
-from django.core.urlresolvers import reverse
 
 from beautifulpredicates.predicates import RequestParamPredicate
 from beautifulpredicates.views import PredicateProcessView
@@ -11,7 +10,7 @@ class PonyView(PredicateProcessView):
                           ('get_corn_1', (RequestParamPredicate('corn=1'),)),
                       )
     def get_corn(self, request, *args, **kwargs):
-        return HttpResponse('pony with some corn' + reverse('pony'))
+        return HttpResponse('pony with some corn')
 
     def get_corn_1(self, request, *args, **kwargs):
         return HttpResponse('pony with unicorn')
